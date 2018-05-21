@@ -11,7 +11,20 @@ Extact it in folder
 To run the application do the following steps - 
 
 1.Run zookeeper-server-start.bat ../../config/zookeeper.properties
+
 2.Run kafka-server-start.bat ../../config/server.properties
+
 3.Run Spring boot application
+
+
+Reference :
+
+https://gitlab.com/Dasyel/kafka_blogpost
+
+https://github.com/spring-cloud/spring-cloud-stream-samples
+
+https://github.com/cjdev/kafka-rx 
+
+https://github.com/howtoprogram/apache-kafka-examples 
 
 
