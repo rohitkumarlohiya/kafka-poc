@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    stream:
+      defaultBinder: kafka
+      bindings:
+        generateinput:
+          destination: messages
+          content-type: application/json
+        processorinput:
+          destination: messages
+          content-type: application/json
+        processoroutput:
+          destination: filtered
+          content-type: application/json
+        processedinput:
+          destination: filtered
+          content-type: application/json
+      kafka:
+        binder:
+          brokers: ${SERVICE_REGISTRY_HOST:192.168.1.27}
+          zkNodes: ${SERVICE_REGISTRY_HOST:192.168.1.27}
+          defaultZkPort: 2181
+          defaultBrokerPort: 9092
+server:
+  port: 0
